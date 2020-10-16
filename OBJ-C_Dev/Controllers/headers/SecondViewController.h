@@ -9,8 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SecondViewController : UIViewController
-@property (nonatomic,strong) UIButton *button;
+@interface SecondViewController : UIViewController <UITableViewDataSource>
+
+@property (strong, nonnull) UITableView *tableView;
 
 @end
 

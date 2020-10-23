@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6918EFD12542FC3E0023D379 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6918EFD02542FC3E0023D379 /* NewsModel.m */; };
+		6918EFD52542FDAE0023D379 /* NewsRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6918EFD42542FDAE0023D379 /* NewsRequestModel.m */; };
+		6918EFDB2543003B0023D379 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6918EFDA2543003B0023D379 /* DataManager.m */; };
+		6918EFDF254305A70023D379 /* NetworkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6918EFDE254305A70023D379 /* NetworkAPI.m */; };
+		6918EFE3254335E50023D379 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6918EFE2254335E50023D379 /* NewsViewController.m */; };
 		69E3997D25320317000DC380 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3997C25320317000DC380 /* AppDelegate.m */; };
 		69E3998325320317000DC380 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3998225320317000DC380 /* ViewController.m */; };
 		69E399882532031D000DC380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E399872532031D000DC380 /* Assets.xcassets */; };
@@ -17,6 +22,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6918EFCF2542FC3E0023D379 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		6918EFD02542FC3E0023D379 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		6918EFD32542FDAE0023D379 /* NewsRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsRequestModel.h; sourceTree = "<group>"; };
+		6918EFD42542FDAE0023D379 /* NewsRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsRequestModel.m; sourceTree = "<group>"; };
+		6918EFD92543003B0023D379 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		6918EFDA2543003B0023D379 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		6918EFDD254305A70023D379 /* NetworkAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkAPI.h; sourceTree = "<group>"; };
+		6918EFDE254305A70023D379 /* NetworkAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkAPI.m; sourceTree = "<group>"; };
+		6918EFE1254335E50023D379 /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		6918EFE2254335E50023D379 /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		69E3997825320317000DC380 /* OBJ-C_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OBJ-C_Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E3997B25320317000DC380 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69E3997C25320317000DC380 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -43,6 +58,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6918EFCB2542FBBE0023D379 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6918EFCF2542FC3E0023D379 /* NewsModel.h */,
+				6918EFD02542FC3E0023D379 /* NewsModel.m */,
+				6918EFD32542FDAE0023D379 /* NewsRequestModel.h */,
+				6918EFD42542FDAE0023D379 /* NewsRequestModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6918EFD82543002A0023D379 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6918EFD92543003B0023D379 /* DataManager.h */,
+				6918EFDA2543003B0023D379 /* DataManager.m */,
+				6918EFDD254305A70023D379 /* NetworkAPI.h */,
+				6918EFDE254305A70023D379 /* NetworkAPI.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		69E3996F25320316000DC380 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +99,8 @@
 		69E3997A25320317000DC380 /* OBJ-C_Dev */ = {
 			isa = PBXGroup;
 			children = (
+				6918EFD82543002A0023D379 /* Utils */,
+				6918EFCB2542FBBE0023D379 /* Models */,
 				69FDBA952539A8D300C57505 /* Controllers */,
 				69E3997B25320317000DC380 /* AppDelegate.h */,
 				69E3997C25320317000DC380 /* AppDelegate.m */,
@@ -77,20 +116,22 @@
 			isa = PBXGroup;
 			children = (
 				69FDBA982539AF1D00C57505 /* Cells */,
-				69FDBA962539A8E400C57505 /* headers */,
+				69FDBA962539A8E400C57505 /* Headers */,
 				69E3999E25320C38000DC380 /* SecondViewController.m */,
 				69E3998225320317000DC380 /* ViewController.m */,
+				6918EFE2254335E50023D379 /* NewsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		69FDBA962539A8E400C57505 /* headers */ = {
+		69FDBA962539A8E400C57505 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				6918EFE1254335E50023D379 /* NewsViewController.h */,
 				69E3998125320317000DC380 /* ViewController.h */,
 				69E3999D25320C38000DC380 /* SecondViewController.h */,
 			);
-			path = headers;
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		69FDBA982539AF1D00C57505 /* Cells */ = {
@@ -173,8 +214,13 @@
 				69E3999F25320C38000DC380 /* SecondViewController.m in Sources */,
 				69E3998325320317000DC380 /* ViewController.m in Sources */,
 				69E3997D25320317000DC380 /* AppDelegate.m in Sources */,
+				6918EFD52542FDAE0023D379 /* NewsRequestModel.m in Sources */,
 				69FDBA9B2539AF3B00C57505 /* CustomTableViewCell.m in Sources */,
+				6918EFDB2543003B0023D379 /* DataManager.m in Sources */,
+				6918EFD12542FC3E0023D379 /* NewsModel.m in Sources */,
+				6918EFE3254335E50023D379 /* NewsViewController.m in Sources */,
 				69E3998E2532031D000DC380 /* main.m in Sources */,
+				6918EFDF254305A70023D379 /* NetworkAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

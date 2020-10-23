@@ -6,12 +6,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomTableViewCell : UITableViewCell
-@property (nonatomic, strong) UILabel *leftLabel;
-@property (nonatomic, strong) UILabel *rightLabel;
+@property (nonatomic, strong) NewsModel *news;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *authorLabel;
+
+-(void)configurateWithNews:(NewsModel*)news;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -13,6 +13,7 @@
 		69E3998B2532031D000DC380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E399892532031D000DC380 /* LaunchScreen.storyboard */; };
 		69E3998E2532031D000DC380 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3998D2532031D000DC380 /* main.m */; };
 		69E3999F25320C38000DC380 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3999E25320C38000DC380 /* SecondViewController.m */; };
+		69FDBA9B2539AF3B00C57505 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FDBA9A2539AF3B00C57505 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		69E3998D2532031D000DC380 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69E3999D25320C38000DC380 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		69E3999E25320C38000DC380 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		69FDBA992539AF3B00C57505 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		69FDBA9A2539AF3B00C57505 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,18 +62,44 @@
 		69E3997A25320317000DC380 /* OBJ-C_Dev */ = {
 			isa = PBXGroup;
 			children = (
+				69FDBA952539A8D300C57505 /* Controllers */,
 				69E3997B25320317000DC380 /* AppDelegate.h */,
 				69E3997C25320317000DC380 /* AppDelegate.m */,
-				69E3998125320317000DC380 /* ViewController.h */,
-				69E3998225320317000DC380 /* ViewController.m */,
 				69E399872532031D000DC380 /* Assets.xcassets */,
 				69E399892532031D000DC380 /* LaunchScreen.storyboard */,
 				69E3998C2532031D000DC380 /* Info.plist */,
 				69E3998D2532031D000DC380 /* main.m */,
-				69E3999D25320C38000DC380 /* SecondViewController.h */,
-				69E3999E25320C38000DC380 /* SecondViewController.m */,
 			);
 			path = "OBJ-C_Dev";
+			sourceTree = "<group>";
+		};
+		69FDBA952539A8D300C57505 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69FDBA982539AF1D00C57505 /* Cells */,
+				69FDBA962539A8E400C57505 /* headers */,
+				69E3999E25320C38000DC380 /* SecondViewController.m */,
+				69E3998225320317000DC380 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		69FDBA962539A8E400C57505 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				69E3998125320317000DC380 /* ViewController.h */,
+				69E3999D25320C38000DC380 /* SecondViewController.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		69FDBA982539AF1D00C57505 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				69FDBA992539AF3B00C57505 /* CustomTableViewCell.h */,
+				69FDBA9A2539AF3B00C57505 /* CustomTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +173,7 @@
 				69E3999F25320C38000DC380 /* SecondViewController.m in Sources */,
 				69E3998325320317000DC380 /* ViewController.m in Sources */,
 				69E3997D25320317000DC380 /* AppDelegate.m in Sources */,
+				69FDBA9B2539AF3B00C57505 /* CustomTableViewCell.m in Sources */,
 				69E3998E2532031D000DC380 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
